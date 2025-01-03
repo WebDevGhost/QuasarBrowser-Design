@@ -1,0 +1,23 @@
+Account
+Services
+Search Engine
+Password Manager
+Payment Methods
+Addresses & More
+Privacy & Security
+Safety Check
+Notifications
+Theming
+
+ADVANCED
+Tabs
+HomePage
+Page Cards (New Tab)
+ToolBar Shortcut
+Accessibility
+Site Settings
+Languages
+Downloads
+Quasar Links
+Developers Only
+About Quasar browser
