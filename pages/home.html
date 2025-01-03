@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quasar Browser Design</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        .navbar img {
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #1e1e1e;
+            min-width: 200px;
+            border-radius: 10px 10px 0 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content a img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #333;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+
+        <img src="https://webdevghost.github.io/QuasarBrowser-Design/assets/icons/home.png" alt="Home" onclick="window.location.href='home.html';">
+
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <img src="https://webdevghost.github.io/QuasarBrowser-Design/assets/icons/account.png" alt="Account" onclick="window.location.href='account.html';">
+            <img src="https://webdevghost.github.io/QuasarBrowser-Design/assets/icons/tabs.png" alt="Tabs" onclick="window.location.href='tabs.html';">
+            
+            <div class="dropdown">
+                <img src="https://webdevghost.github.io/QuasarBrowser-Design/assets/icons/menu.png" alt="Menu">
+                <div class="dropdown-content">
+                    <a href="#"><img src="#" alt="Option">Option</a>
+                    <a href="#"><img src="#" alt="Option">Option</a>
+                    <a href="#"><img src="#" alt="Option">Option</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
